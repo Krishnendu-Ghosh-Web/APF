@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <html>
+
+    <body>
+        <div class="bg-[var(--background)] text-[var(--foreground)] min-h-screen">
+            <nav class="bg-[var(--card)] text-[var(--card-foreground)] flex justify-between items-center p-4 shadow-md">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSWUebMai98KObtR61udnkEGdHgVoFvPRlQf8YYx4TLQcjsiqH"
+                    alt="APF Logo" class="h-10">
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="hover:text-[var(--primary)] transition-colors duration-300">Home</a></li>
+                    <li><a href="#" class="hover:text-[var(--primary)] transition-colors duration-300">Products</a></li>
+                    <li><a href="#" class="hover:text-[var(--primary)] transition-colors duration-300">Social Media</a>
+                    </li>
+                    <li><a href="#" class="hover:text-[var(--primary)] transition-colors duration-300">Support</a></li>
+                </ul>
+                <div class="flex space-x-4">
+                    <button
+                        class="bg-[var(--secondary)] text-[var(--secondary-foreground)] p-2 rounded-full hover:bg-[var(--secondary)]/80 transition-colors duration-300">
+                        <img style="height: 40px; width: 40px;"
+                            src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpzRc_KvCCX8kfFbiQCtXWVXGjVXv2lcMfSc9atylB6b2i_RCI"
+                            alt="Notifications" />
+                    </button>
+                    <button
+                        class="bg-[var(--secondary)] text-[var(--secondary-foreground)] p-2 rounded-full hover:bg-[var(--secondary)]/80 transition-colors duration-300">
+                        <img style="height: 40px; width: 40px;"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3EqB-npZKfuWo1tf_Aay99dESQ2nyfSnYWlzJoMtTIYamT11s"
+                            alt="User" />
+                    </button>
+                    <button
+                        class="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-indigo-600 rounded-full shadow-md group">
+                        <span
+                            class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-indigo-600 group-hover:translate-x-0 ease">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </span>
+                        <span
+                            class="absolute flex items-center justify-center w-full h-full text-indigo-600 transition-all duration-300 transform group-hover:translate-x-full ease">Login</span>
+                        <span class="relative invisible">Login</span>
+                    </button>
+                </div>
+            </nav>
+
+            <section class="relative bg-red-600 text-white p-10 overflow-hidden">
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+                <div class="relative z-10 max-w-4xl mx-auto text-center">
+                    <h1 class="text-4xl font-bold animate-fade-in">Don't Get Stuck in the Slow Lane, Get New Brakes
+                        Today!</h1>
+                    <p class="mt-4 animate-fade-in-delay">Experience unmatched braking efficiency with our premium
+                        drilled and slotted brake rotor kits.</p>
+                    <div class="mt-6 flex justify-center space-x-4 animate-fade-in-delay-2">
+                        <button
+                            class="bg-[var(--secondary)] text-[var(--secondary-foreground)] px-4 py-2 rounded-full hover:bg-[var(--secondary)]/80 transition-colors duration-300">Search
+                            by Vehicle</button>
+                        <button
+                            class="bg-[var(--secondary)] text-[var(--secondary-foreground)] px-4 py-2 rounded-full hover:bg-[var(--secondary)]/80 transition-colors duration-300">VIN
+                            Decoder</button>
+                    </div>
+                </div>
+                <img src="https://img.freepik.com/fotos-premium/muestra-pastilla-freno-disco-personalizados-automoviles_1048944-4833434.jpg"
+                    alt="Brake Rotors" class="absolute right-0 bottom-0 w-1/2 h-full object-cover opacity-50">
+            </section>
+
+            <section class="bg-red-700 text-white p-6">
+                <div class="max-w-2xl mx-auto text-center">
+                    <h2 class="text-2xl font-bold mb-4">Select Year</h2>
+                    <div class="flex justify-center items-center space-x-4">
+                        <select class="p-2 rounded bg-white text-black">
+                            <option>Select</option>
+                            <option>2024</option>
+                            <option>2023</option>
+                            <option>2022</option>
+                            <option>2021</option>
+                            <option>2020</option>
+                            <option>2019</option>
+                            <option>2018</option>
+                            <option>2017</option>
+                            <option>2016</option>
+                            <option>2015</option>
+                            <option>2014</option>
+                            <option>2013</option>
+                            <option>2012</option>
+                            <option>2011</option>
+                            <option>2010</option>
+                        </select>
+                        <div class="flex items-center">
+                            <input type="email" placeholder="Enter item"
+                                class="p-3 rounded-l-lg bg-[#4a1c1c] text-white w-full md:w-auto md:flex-grow" />
+                            <button class="bg-[#e63946] text-white p-3 rounded-r-lg">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- 2nd pard -->
+
+        <div class="bg-[var(--background)] text-[var(--foreground)]">
+
+            <div class="max-w-7xl mx-auto p-6">
+                <div class="text-sm text-muted-foreground">// Braking Performance</div>
+                <h1 class="text-4xl font-bold mt-2 mb-4">Maximize Your Vehicle's Braking Performance</h1>
+                <button class="bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:bg-primary/80">Learn
+                    More →</button>
+            </div>
+
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+                <div class="relative">
+                    <img class="one"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUpJpW786xAzrwIEnwuISWGuFxDJPpcH2iLk-Pl2e51HVqsKvj"
+                        alt="Enhanced Cooling" class="rounded-lg w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-lg p-4 flex flex-col justify-end">
+                        <div class="text-white text-lg font-semibold">Enhanced Cooling</div>
+                        <a href="#" class="text-white mt-2">Learn More →</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img class="two"
+                        src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4J8bp7FMgmOqiKMcHtSGATpW1b0lMD0I9JIhkVWleMhDPt5fJ"
+                        alt="Premium Drilled" class="rounded-lg w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-lg p-4 flex flex-col justify-end">
+                        <div class="text-white text-lg font-semibold">Premium Drilled</div>
+                        <a href="#" class="text-white mt-2">Learn More →</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img class="three"
+                        src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQAJ3OGeIqK6p7U-7qf8fuij2bUkNPcW7ZJqjy5wTjGDmLRyMs"
+                        alt="Significant Upgrade" class="rounded-lg w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-lg p-4 flex flex-col justify-end">
+                        <div class="text-white text-lg font-semibold">Significant Upgrade</div>
+                        <a href="#" class="text-white mt-2">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-red-600 to-red-800 text-white py-12">
+                <div class="max-w-7xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold mb-8">Our Advantages</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                        <div class="flex flex-col items-center">
+                            <img style="height: 225px; width: 225px;"
+                                src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRMR-_XCslmAuvvMIgyoeCT2f4WD1PwlrxHdwnFslDVPNZr3X03"
+                                alt="2 Day Shipping to 48 States" class="mb-4">
+                            <div class="text-lg font-semibold">2 Day Shipping to 48 States</div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYCmx8ZO2Al2DcYOu9nBGQCWZ8X3A5PbFylqfQXcOW1KIZdMgx"
+                                alt="EASY Hassle Free Returns" class="mb-4">
+                            <div class="text-lg font-semibold">EASY Hassle Free Returns</div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs5kVW1uPLNvkvTT0ykJCBVRfuvBc0I3OLGDWKJXJN-ZP28rpu"
+                                alt="Professional Customer Service Team" class="mb-4">
+                            <div class="text-lg font-semibold">Professional Customer Service Team</div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <img style="height: 225px; width: 225px;"
+                                src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpdktxI1nQ2fscPeKENd_Ea3UNrCy9DJY-_MdQ2PpnbacXBhI3"
+                                alt="10 Year Warranty" class="mb-4">
+                            <div class="text-lg font-semibold">10 Year Warranty</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3rd part -->
+
+        <div class="bg-card text-card-foreground p-8 rounded-lg shadow-lg max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="space-y-4">
+                    <p class="text-muted-foreground">// Superior Braking</p>
+                    <h2 class="text-4xl font-bold">Discover Our Ceramic Carbon Fiber Brake Pads</h2>
+                    <button
+                        class="bg-destructive text-destructive-foreground hover:bg-destructive/80 px-6 py-3 rounded-lg mt-4 transition-transform transform hover:scale-105">
+                        Learn More
+                    </button>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img style="height: 470px; width: 321px;"
+                        src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4J8bp7FMgmOqiKMcHtSGATpW1b0lMD0I9JIhkVWleMhDPt5fJ"
+                        alt="Worker handling brake pads"
+                        class="rounded-lg object-cover w-full h-full transition-transform transform hover:scale-105">
+                    <div class="grid grid-rows-2 gap-4">
+                        <img style="height: 229px; width: 152px;"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTCD7nSCCZxpTM4LO-_-T3suyDKVLkoGiJ58KFWXYwdk6IaiV0"
+                            alt="Person holding a package"
+                            class="rounded-lg object-cover w-full h-full transition-transform transform hover:scale-105">
+                        <img style="height: 229px; width: 152px;"
+                            src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT81dYRmdwliLeiySOq9TMZaUH71rJIrOIXKKtCbNfTUVrhk5_L"
+                            alt="Brake fluid bottle"
+                            class="rounded-lg object-cover w-full h-full transition-transform transform hover:scale-105">
+                    </div>
+                    <img style="height: 316px; width: 474px;"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDGCxe0CjQJRhCg-N0RH9wMxTJ62eOrLry9lgYB9PHVZ_K0VSz"
+                        alt="Mechanic working on a brake system"
+                        class="rounded-lg object-cover w-full h-full col-span-2 transition-transform transform hover:scale-105">
+                </div>
+            </div>
+        </div>
+
+        <!-- 4th part -->
+
+        <div class="flex flex-col md:flex-row bg-[#2b0a0a] text-white">
+
+            <div class="flex flex-col justify-center p-8 md:w-1/2">
+                <div class="mb-4 text-sm">// Join Our Mailing List</div>
+                <h1 class="text-4xl font-bold mb-6">Get in touch to our modern brake pads</h1>
+                <div class="flex items-center">
+                    <input type="email" placeholder="Enter Email"
+                        class="p-3 rounded-l-lg bg-[#4a1c1c] text-white w-full md:w-auto md:flex-grow" />
+                    <button class="bg-[#e63946] text-white p-3 rounded-r-lg">Subscribe</button>
+                </div>
+            </div>
+
+            <div class="relative md:w-1/2">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTdHjNQlYxrMgU3cdBkHbyMfGCSdLtE1USYOKRwd4V7xC--2wH4"
+                    alt="Car with modern brake pads" class="object-cover w-full h-full" />
+                <div class="absolute bottom-0 right-0 p-4">
+
+                    <img style="height: 80px; width: 100px;"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBcW1W4YHisOze-1R7ApX1T13rK4QNmcp9c_Q5rEk2ML-ere8T"
+                        alt="Ceramic brake pads box" />
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <!-- 5th part -->
+
+    <div class="bg-background text-foreground p-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-sm text-muted-foreground mb-2">// Superior Braking</div>
+            <h1 class="text-4xl font-bold mb-6">Upgrade to Unsurpassed Control</h1>
+            <div class="flex space-x-4">
+                <div class="relative w-1/3">
+                    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7m2hZLPlJV2qzIpvzQyq5lT0l2Y_G3PoA4Z0dgIc3rAEdHKwy"
+                        alt="Brake disc" class="w-full h-full object-cover rounded-lg" />
+                    <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4 rounded-b-lg">
+                        Enjoy A Cleaner, Quieter Ride
+                    </div>
+                </div>
+                <div class="relative w-1/3">
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsirto-iG0K2vmDaOQFt7h4rm8Id6jypcp0yHM6_a4y_R0nYwh"
+                        alt="Brake pads" class="w-full h-full object-cover rounded-lg" />
+                    <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4 rounded-b-lg">
+                        Unwavering Performance
+                    </div>
+                </div>
+                <div class="relative w-1/3">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQlQmqbBI1C7ZOXnTectMzjAVNy5nJ_6iJqrViS222YymTjESoi"
+                        alt="Tire with brake" class="w-full h-full object-cover rounded-lg" />
+                    <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4 rounded-b-lg">
+                        Upgrade Your Stopping Power
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6">
+                <button
+                    class="bg-destructive text-destructive-foreground hover:bg-destructive/80 px-6 py-3 rounded-lg flex items-center space-x-2">
+                    <span>Learn More</span>
+                    <img aria-hidden="true" alt="arrow" src="https://openui.fly.dev/openui/24x24.svg?text=➡️" />
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- 6th part -->
+    <div class="relative bg-cover bg-center"
+        style="background-image: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-MbooF528OejzXUUs7Rq6bGK4vaH3C1vS-rSHO2MghNx-WLhp'); height:800px; width:auto;">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 flex flex-col justify-center h-full p-8 text-white">
+            <h1 class="text-3xl font-bold">Get Your Popular Brake Pad Kits Delivered Quickly</h1>
+            <button class="mt-4 bg-primary text-primary-foreground hover:bg-primary/80 px-4 py-2 rounded-lg">
+                Learn More <img aria-hidden="true" alt="arrow-right"
+                    src="https://openui.fly.dev/openui/24x24.svg?text=➡️" class="inline-block ml-2" />
+            </button>
+        </div>
+    </div>
+
+    <!-- 7th part -->
+    <div class="bg-background text-foreground py-12">
+        <div class="text-center mb-8">
+            <p class="text-muted-foreground">// Testimonials</p>
+            <h2 class="text-3xl font-bold">Inspiring Stories from Our Incredible Clients</h2>
+        </div>
+        <div class="flex justify-center space-x-4 overflow-x-auto px-4">
+            <div class="bg-card text-card-foreground p-6 rounded-lg shadow-md w-80">
+                <p class="text-muted-foreground mb-4">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac sodales mi, euismod varius odio.
+                    Cras ante odio, vestibulum sit amet sollicitudin sit amet, tristique et nibh.”
+                </p>
+                <div class="flex items-center">
+                    <div>
+                        <p class="font-bold">Usman Zafar</p>
+                        <p class="text-muted-foreground">Customer</p>
+                    </div>
+                </div>
+                <div class="flex items-center mt-2">
+                    <span class="text-yellow-500">★ ★ ★ ★ ★</span>
+                </div>
+            </div>
+
+            <div class="bg-card text-card-foreground p-6 rounded-lg shadow-md w-80">
+                <p class="text-muted-foreground mb-4">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac sodales mi, euismod varius odio.
+                    Cras ante odio, vestibulum sit amet sollicitudin sit amet, tristique et nibh.”
+                </p>
+                <div class="flex items-center">
+                    <div>
+                        <p class="font-bold">Usman Zafar</p>
+                        <p class="text-muted-foreground">Customer</p>
+                    </div>
+                </div>
+                <div class="flex items-center mt-2">
+                    <span class="text-yellow-500">★ ★ ★ ★ ★</span>
+                </div>
+            </div>
+
+            <div class="bg-primary text-primary-foreground p-6 rounded-lg shadow-md w-80">
+                <p class="text-muted-foreground mb-4">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac sodales mi, euismod varius odio.
+                    Cras ante odio, vestibulum sit amet sollicitudin sit amet, tristique et nibh.”
+                </p>
+                <div class="flex items-center">
+                    <div>
+                        <p class="font-bold">Usman Zafar</p>
+                        <p class="text-muted-foreground">Customer</p>
+                    </div>
+                </div>
+                <div class="flex items-center mt-2">
+                    <span class="text-yellow-500">★ ★ ★ ★ ★</span>
+                </div>
+            </div>
+
+            <div class="bg-card text-card-foreground p-6 rounded-lg shadow-md w-80">
+                <p class="text-muted-foreground mb-4">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac sodales mi, euismod varius odio.
+                    Cras ante odio, vestibulum sit amet sollicitudin sit amet, tristique et nibh.”
+                </p>
+                <div class="flex items-center">
+                    <div>
+                        <p class="font-bold">Usman Zafar</p>
+                        <p class="text-muted-foreground">Customer</p>
+                    </div>
+                </div>
+                <div class="flex items-center mt-2">
+                    <span class="text-yellow-500">★ ★ ★ ★ ★</span>
+                </div>
+            </div>
+
+            <div class="bg-card text-card-foreground p-6 rounded-lg shadow-md w-80">
+                <p class="text-muted-foreground mb-4">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac sodales mi, euismod varius odio.
+                    Cras ante odio, vestibulum sit amet sollicitudin sit amet, tristique et nibh.”
+                </p>
+                <div class="flex items-center">
+                    <div>
+                        <p class="font-bold">Usman Zafar</p>
+                        <p class="text-muted-foreground">Customer</p>
+                    </div>
+                </div>
+                <div class="flex items-center mt-2">
+                    <span class="text-yellow-500">★ ★ ★ ★ ★</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 8th part -->
+    <div class="bg-background text-foreground p-4">
+        <div class="flex overflow-x-auto space-x-4">
+            <div class="flex-none w-64">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSImT82B3lIrRn1UqBFWd-FCWpBtulcfkP7Lcxhj35Y8R0i5kdO"
+                    alt="Brake Pads" class="w-full h-auto" />
+                <div class="p-2">
+                    <h3 class="text-lg font-bold">Brake Pads</h3>
+                </div>
+            </div>
+            <div class="flex-none w-64">
+                <img style="height:256px; width:256px;"
+                    src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQX-9yCFSatSc_iNUzxLMGCruI4AgvnwOqRdE-DsW2wBmzk0e5D"
+                    alt="Jeep Outdoors" class="w-full h-auto" />
+                <div class="p-2">
+                    <h3 class="text-lg font-bold">Outdoors</h3>
+                </div>
+            </div>
+            <div class="flex-none w-64">
+                <img style="height:256px; width:256px;"
+                    src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT6esbcs1d7rZ3mKs-21dqimTkLlaCktH8Z2u5f3HrAuM8NNRBO"
+                    alt="Subaru Outdoors" class="w-full h-auto" />
+                <div class="p-2">
+                    <h3 class="text-lg font-bold">Outdoors</h3>
+                </div>
+            </div>
+            <div class="flex-none w-64">
+                <img style="height:256px; width:256px;"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBTkfDUR7it1WJ2Uyx9cJrOFgM1-OCCtEmkS-jEk2stkziqYuO"
+                    alt="Instagram Promo" class="w-full h-auto" />
+                <div class="p-2">
+                    <h3 class="text-lg font-bold">Instagram Promo</h3>
+                </div>
+            </div>
+            <div class="flex-none w-64">
+                <img style="height:256px; width:256px;"
+                    src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRj93FUR7GVscg5aOMqzAp2sBPfqBrsuMBWL6ALnIv-DRD97wiw"
+                    alt="Brake Rotors" class="w-full h-auto" />
+                <div class="p-2">
+                    <h3 class="text-lg font-bold">Brake Rotors</h3>
+                </div>
+            </div>
+            <div class="flex-none w-64">
+                <img style="height:256px; width:256px;"
+                    src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxjNFqHe-2BVwjveeCVKuun6YrnWKZQLNptV0OGvmzlaUQrZ4O"
+                    alt="Car Wheel" class="w-full h-auto" />
+                <div class="p-2">
+                    <h3 class="text-lg font-bold">Car Wheel</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="bg-gradient-to-r from-black to-red-900 text-white py-8" style="width: 100%;">
+        <div class="container mx-auto flex flex-wrap justify-between">
+            <div class="flex flex-col items-start">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSWUebMai98KObtR61udnkEGdHgVoFvPRlQf8YYx4TLQcjsiqH"
+                    alt="APF Logo" class="mb-4" />
+                <div class="flex space-x-4">
+                    <a href="#" aria-label="Instagram">
+                        <img style="height:24px; width:24px;"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX6ZOQgoTwtcgjYVcu23UFRYoIUtuBqjFkbQ&s"
+                            alt="Instagram Icon" />
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <img style="height:24px; width:24px;"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScmQ4hEmFcIm8SqBpqAiW21stvUc3X_Vyq3w&s"
+                            alt="Facebook Icon" />
+                    </a>
+                    <a href="#" aria-label="TikTok">
+                        <img style="height:24px; width:24px;"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe0UtIV8vdQMcpNdOHgYQ1JOYEkCALgVXKXg&s"
+                            alt="TikTok Icon" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <h3 class="font-bold mb-2">Quick Links</h3>
+                <a href="#" class="hover:underline">Home</a>
+                <a href="#" class="hover:underline">About Us</a>
+                <a href="#" class="hover:underline">Contact Us</a>
+                <a href="#" class="hover:underline">Return Policy</a>
+                <a href="#" class="hover:underline">Shipping and Handling Policy</a>
+                <a href="#" class="hover:underline">Return Policy</a>
+            </div>
+
+            <div class="flex flex-col">
+                <h3 class="font-bold mb-2">More</h3>
+                <a href="#" class="hover:underline">Payment Method</a>
+                <a href="#" class="hover:underline">Promotions</a>
+                <a href="#" class="hover:underline">APF Warranty</a>
+                <a href="#" class="hover:underline">Disclaimer</a>
+                <a href="#" class="hover:underline">Do Not Sell My Personal Information</a>
+            </div>
+
+            <div class="flex flex-col">
+                <h3 class="font-bold mb-2">Contact Us</h3>
+                <input type="text" placeholder="Your Name"
+                    class="bg-red-800 border-2 border-red-600 text-white p-2 mb-2" />
+                <input type="text" placeholder="Your Email" class="bg-red-800 border-2 border-red-600 text-white p-2" />
+            </div>
+        </div>
+    </div>
+    <!-- 4th part -->
+
+
+</body>
+
+</html>
